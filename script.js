@@ -17,8 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const cookieBanner = document.createElement("div");
     cookieBanner.id = "cookie-banner";
     cookieBanner.innerHTML = `<div class="cookie-content">
-            <p>This website uses cookies to ensure you get the best experience on our website.</p>
-            <button id="accept-cookies">Accept</button>
+            <p>Questo sito si serve dei cookies per garantire la miglior esperienza possibile.</p>
+            <p>Premendo "Accetta" acconsenti all'uso dei cookies.</p>
+            <p>Per maggiori informazioni, per favore leggere l'<a href="https://www.garanteprivacy.it/temi/informativa", target="_blank">Informativa</a>.</p>
+            <button id="accept-cookies">Accetta</button>
         </div>`;
     document.body.appendChild(cookieBanner);
 

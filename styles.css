@@ -3,13 +3,13 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: #1e1e1e; /* Nero profondo */
-    color: #f5f5f5; /* Bianco avorio per un buon contrasto */
+    background: #1e1e1e;
+    color: #f5f5f5;
 }
 
 /* Header e Footer */
 header, footer {
-    background: #4b3621; /* Legno scuro */
+    background: #4b3621;
     color: #ffffff;
     text-align: center;
     padding: 1.5rem 0;
@@ -17,7 +17,7 @@ header, footer {
 }
 
 footer section {
-    background: #362d26; /* Legno ancora più scuro per contrastare */
+    background: #362d26;
     color: #ffffff;
     padding: 1rem;
     border-radius: 8px;
@@ -27,12 +27,23 @@ footer section {
     text-align: center;
 }
 footer section a {
-    color: #a8926a; /* Richiama una tonalità calda di legno */
+    color: #a8926a;
     text-decoration: none;
     font-weight: bold;
 }
 footer section a:hover {
     color: #d1b894;
+}
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10px;
+}
+footer div a {
+    margin: 0 10px;
+    color: #a8926a;
+    transition: color 0.3s ease;
 }
 
 /* Navigazione */
@@ -61,7 +72,7 @@ section {
     margin: 2rem auto;
     padding: 2rem;
     max-width: 800px;
-    background: #2e2e2e; /* Tonalità antracite */
+    background: #2e2e2e;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
@@ -85,7 +96,7 @@ section {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: rgba(43, 43, 43, 0.95); /* Sfondo semi-trasparente nero */
+    background: rgba(43, 43, 43, 0.95);
     color: #d1b894;
     text-align: center;
     padding: 15px;
@@ -101,5 +112,12 @@ section {
     transition: background 0.3s ease;
 }
 #cookie-banner button:hover {
+    color: #000000;
     background: #d1b894;
+}
+#cookie-banner a {
+    color: #a8926a;
+}
+#cookie-banner a:hover {
+    color: #ffffff;
 }
