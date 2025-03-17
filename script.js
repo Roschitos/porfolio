@@ -20,17 +20,23 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>Questo sito si serve dei cookies per garantire la miglior esperienza possibile.</p>
             <p>Premendo "Accetta" acconsenti all'uso dei cookies.</p>
             <p>Per maggiori informazioni, per favore leggere l'<a href="https://www.garanteprivacy.it/temi/informativa", target="_blank">Informativa</a>.</p>
-            <button id="accept-cookies">Accetta</button>
+            <button id="accept-cookies">Accetta</button> <button id="rejected-cookies">Continua senza</button>
         </div>`;
     document.body.appendChild(cookieBanner);
 
     const acceptBtn = document.getElementById("accept-cookies");
-    if (!localStorage.getItem("cookiesAccepted")) {
+    const rejectBtn = document.getElementById("rejected-cookies");
+    if (!localStorage.getItem("cookiesAccepted") {
         cookieBanner.style.display = "block";
     }
 
     acceptBtn.addEventListener("click", () => {
         localStorage.setItem("cookiesAccepted", "true");
+        cookieBanner.style.display = "none";
+    });
+
+    rejectBtn.addEventListener("click", () => {
+        localStorage.setItem("cookiesAccepted", "false");
         cookieBanner.style.display = "none";
     });
 });
