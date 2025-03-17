@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         fadeInElements.forEach(el => observer.observe(el));
     }
-
+document.addEventListener("DOMContentLoaded", () => {
     // Banner dei cookie
     if (!localStorage.getItem("cookiesAccepted")) {
         const cookieBanner = document.createElement("div");
