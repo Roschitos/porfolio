@@ -3,9 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const fadeInElements = document.querySelectorAll(".fade-in");
 
     if (fadeInElements.length > 0) {
-    const observer To_Fade
-        
-    if (fadeInElements.length > 0) {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -20,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Banner dei cookie
-    if (!localStorage.getItem("cookiesAccepted") && !localStorage.getItem("cookiesRejected")) {
+    if (!localStorage.getItem("cookiesAccepted")) {
         const cookieBanner = document.createElement("div");
         cookieBanner.id = "cookie-banner";
         cookieBanner.innerHTML = `
@@ -28,24 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>Questo sito si serve dei cookies per garantire la miglior esperienza possibile.</p>
                 <p>Premendo "Accetta" acconsenti all'uso dei cookies.</p>
                 <p>Per maggiori informazioni, leggere l'<a href="https://www.garanteprivacy.it/temi/informativa" target="_blank" rel="noopener noreferrer">Informativa</a>.</p>
-                <button id="accept-cookies">Accetta</button> 
-                <button id="reject-cookies">Continua senza</button>
+                <button id="accept-cookies">Accetta</button>
             </div>`;
         document.body.appendChild(cookieBanner);
 
         const acceptBtn = document.getElementById("accept-cookies");
-        const rejectBtn = document.getElementById("reject-cookies");
 
         if (acceptBtn) {
             acceptBtn.addEventListener("click", () => {
                 localStorage.setItem("cookiesAccepted", "true");
-                cookieBanner.remove();
-            });
-        }
-
-        if (rejectBtn) {
-            rejectBtn.addEventListener("click", () => {
-                localStorage.setItem("cookiesRejected", "true");
                 cookieBanner.remove();
             });
         }
