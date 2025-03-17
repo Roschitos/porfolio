@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const acceptBtn = document.getElementById("accept-cookies");
     const rejectBtn = document.getElementById("rejected-cookies");
-    if (!localStorage.getItem("cookiesAccepted") || !localStorage.getItem("cookieRejected") {
+    if (!localStorage.getItem("cookiesAccepted") && !localStorage.getItem("cookieRejected") {
         cookieBanner.style.display = "block";
     }
 
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     rejectBtn.addEventListener("click", () => {
-        localStorage.setItem("cookiesRejected", "false");
+        localStorage.setItem("cookiesRejected", "true");
         cookieBanner.style.display = "none";
     });
 });
