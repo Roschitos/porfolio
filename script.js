@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const fadeInElements = document.querySelectorAll(".fade-in");
 
     if (fadeInElements.length > 0) {
+    const observer To_Fade
+        
+    if (fadeInElements.length > 0) {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
