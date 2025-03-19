@@ -7,7 +7,7 @@ body {
     color: #f5f5f5;
 }
 p, li{
-    text-align: justify; !important
+    text-align: justify !important;
 }
 
 /* Header e Footer */
@@ -125,5 +125,6 @@ section {
     color: #ffffff;
 }
 footer p, .cookie-content p {
-    text-align: center; 
+    text-align: center !important; 
 }
+
