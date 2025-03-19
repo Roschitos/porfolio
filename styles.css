@@ -124,3 +124,6 @@ section {
 #cookie-banner a:hover {
     color: #ffffff;
 }
+#cookie-banner p {
+    text-align:none;
+}
