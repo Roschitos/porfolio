@@ -7,7 +7,7 @@ body {
     color: #f5f5f5;
 }
 p, li{
-    text-align: justify;
+    text-align: justify; !important
 }
 
 /* Header e Footer */
