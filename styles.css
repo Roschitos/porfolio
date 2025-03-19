@@ -125,5 +125,5 @@ section {
     color: #ffffff;
 }
 #cookie-banner p {
-    text-align:none;
+    text-align: center; !important
 }
