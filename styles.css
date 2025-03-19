@@ -124,6 +124,6 @@ section {
 #cookie-banner a:hover {
     color: #ffffff;
 }
-#cookie-banner > p {
+footer #cookie-content > p {
     text-align: center; 
 }
